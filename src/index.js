@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from './ScrollToTop.js'
 import { store } from './Store.js'
-import { Provider } from 'react-redux' 
+import { Provider } from 'react-redux'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 // Apollo Client
@@ -18,8 +19,8 @@ root.render(
   <BrowserRouter>
     <ApolloProvider client={client}>
       <Provider store={store}>
-        <ScrollToTop />
         <App />
+        <ScrollToTop />
       </Provider>
     </ApolloProvider>
   </BrowserRouter>,

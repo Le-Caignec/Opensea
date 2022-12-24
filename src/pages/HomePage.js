@@ -1,9 +1,17 @@
-import './homePage.css';
+import './homePage.css'
 
 import React from 'react'
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
+    <div id='test'>
+      <div>HomePage</div>
+      <div>HomePage</div>
+      <div>HomePage</div>
+      <div>HomePage</div>
+      <div>HomePage</div>
+      <div>HomePage</div>
+      <div>DERNIER</div>
+    </div>
   )
 }
