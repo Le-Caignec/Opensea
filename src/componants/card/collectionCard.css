@@ -1,0 +1,30 @@
+#collectionCard {
+  position: relative;
+  border: none;
+  width: 400px;
+  color: black;
+  border-radius: 10px;
+}
+
+#collectionCard .card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#collectionCard .card-title {
+  margin-left: 25%;
+}
+
+#iconOver {
+  position: absolute;
+  background-color: white;
+  bottom: 15px;
+  border-radius: 10px;
+}
+
+#iconOver .card-img {
+  text-align: center;
+  margin: 3px;
+  width: 60px;
+  border-radius: 10px;
+}

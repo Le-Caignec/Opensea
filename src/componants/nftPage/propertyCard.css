@@ -1,0 +1,20 @@
+#propertyCard {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #eff8fe;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #14b2e5;
+}
+
+#position {
+  font-size: 12px;
+  color: #14b2e5;
+}
+
+#percent {
+  font-size: 12px;
+  color: #707a83;
+}

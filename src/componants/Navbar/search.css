@@ -1,0 +1,46 @@
+#searchTool {
+  width: 550px;
+}
+
+#searchTool .input-group-text {
+  color: grey;
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 5px;
+}
+
+#searchTool:hover .input-group-text {
+  border-width: 1px;
+  border-right-width: 0px;
+  border-color: #fcd15a;
+}
+
+#searchTool .form-control {
+  box-shadow: none;
+  padding-left: 0px;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+#searchTool:hover .form-control {
+  border-width: 1px;
+  border-left-width: 0px;
+  border-color: #fcd15a;
+}
+
+#keyboardKey {
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  background-color: #e6e8eb;
+  color: #707a83;
+  border-radius: 5px;
+}
+
+#keyboardKey h6 {
+  margin: 2px;
+}
+
+#searchTool:hover #keyboardKey {
+  display: none;
+}

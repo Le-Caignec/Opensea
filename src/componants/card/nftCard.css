@@ -1,0 +1,36 @@
+#nftCard {
+  position: relative;
+  border: none;
+  color: black;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: grey 0px 2px 8px 0px;
+  margin: 5px;
+}
+
+#nftCard .card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#firstCol {
+  margin: auto;
+}
+
+#nftCard h3 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: auto;
+}
+
+#badge {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e6e8eb;
+  border-radius: 5px;
+}
+
+#badge h3 {
+  text-align: center;
+  margin: 2px;
+}

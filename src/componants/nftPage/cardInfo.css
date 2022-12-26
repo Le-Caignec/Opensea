@@ -1,0 +1,27 @@
+#cardInfo {
+  margin: auto;
+  margin-top: 30px;
+}
+
+#cardInfo svg {
+  margin-right: 10px;
+}
+
+#propertyCardRow .col {
+  padding: 5px;
+}
+
+#cardInfo #colIcon {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 8%;
+}
+
+#cardInfo img {
+  margin: auto;
+  text-align: center;
+}
+
+#secondColumn {
+  text-align: right;
+}
