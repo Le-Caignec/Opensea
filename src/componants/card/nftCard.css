@@ -5,12 +5,20 @@
   width: 300px;
   border-radius: 10px;
   box-shadow: grey 0px 2px 8px 0px;
-  margin: 5px;
+  margin: auto;
+  height: 300px;
+  width: 250px;
 }
 
 #nftCard .card-img-top {
+  border-radius: 0px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+#nftCard .card-body {
+  position: relative;
+  max-height: 50px;
 }
 
 #firstCol {

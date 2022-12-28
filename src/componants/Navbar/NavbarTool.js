@@ -1,23 +1,36 @@
 import './navbarTool.css'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, ListGroup } from 'react-bootstrap'
+import { useState } from 'react'
 import Search from './Search'
-import {BsPersonCircle} from 'react-icons/bs'
+import { BsPersonCircle } from 'react-icons/bs'
+import logo from '../../assets/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function NavbarTool() {
+  const naviguate = useNavigate()
+  const [show, setShow] = useState(false)
+
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Search />
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-          <BsPersonCircle size={30} />
-        </Container>
-      </Navbar>
-    </>
+    <Navbar id="navbar">
+      <img src={logo} alt="logoIEXEC" onClick={() => naviguate('/')} />
+      <Search />
+      <div id="explorerModal">
+        <h6 onMouseEnter={() => setShow(!show)}>Explore</h6>
+        {show && (
+          <ListGroup onMouseLeave={() => setShow(!show)}>
+            <ListGroup.Item
+              action
+              onClick={() => naviguate('/CollectionsPage')}
+            >
+              All Collections
+            </ListGroup.Item>
+            <ListGroup.Item action onClick={() => naviguate('/AllNftPage')}>
+              All NFTs
+            </ListGroup.Item>
+          </ListGroup>
+        )}
+      </div>
+      <BsPersonCircle size={30} onClick={() => naviguate('/AccountPage')} />
+    </Navbar>
   )
 }

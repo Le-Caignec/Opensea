@@ -1,4 +1,46 @@
-#itemActivity{
-    margin: auto;
-    margin-bottom: 30px;
+#itemActivity {
+  margin: auto;
+  margin-bottom: 40px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#tableItemActivity {
+  margin-top: 20px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#accordionBody {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#filterBox {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 10px;
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tableBody {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#column1 {
+  width: 23%;
+}
+#column2 {
+  width: 21.5%;
+}
+#column3 {
+  width: 22%;
+}
+#column4 {
+  width: 13%;
 }

@@ -1,4 +1,20 @@
-#moreAboutCollection{
+#moreAboutCollection {
   margin: auto;
   margin-bottom: 30px;
+}
+
+#horizontalScrolling {
+  position: relative;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#moreAboutCollection .row .col {
+  width: 280px;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 100px;
 }

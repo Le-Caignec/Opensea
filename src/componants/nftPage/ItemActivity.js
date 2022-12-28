@@ -1,6 +1,7 @@
 import './itemActivity.css'
-import { Accordion, Form, Table } from 'react-bootstrap'
+import { Accordion, Form, Table, Row } from 'react-bootstrap'
 import { CgArrowsExchangeAltV } from 'react-icons/cg'
+import {IoIosArrowDown} from 'react-icons/io'
 
 export default function ItemActivity() {
   return (
@@ -10,13 +11,13 @@ export default function ItemActivity() {
           <CgArrowsExchangeAltV size={20} />
           Item Activity
         </Accordion.Header>
-        <Accordion.Body>
-          <Form.Select aria-label="Default select example">
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
+        <Accordion.Body id="accordionBody">
+          <Row>
+            <div id='filterBox'>
+              <h6>Filter</h6>
+              <IoIosArrowDown size={20} />
+            </div>
+          </Row>
           <Table>
             <thead>
               <tr>
@@ -27,37 +28,55 @@ export default function ItemActivity() {
                 <th>Date</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Transfert</td>
-                <td>0.05 RLC</td>
-                <td>1BC493</td>
-                <td>oi55</td>
-                <td>3 days ago</td>
-              </tr>
-              <tr>
-                <td>Transfert</td>
-                <td>0.05 RLC</td>
-                <td>1BC493</td>
-                <td>oi55</td>
-                <td>3 days ago</td>
-              </tr>
-              <tr>
-                <td>Transfert</td>
-                <td>0.05 RLC</td>
-                <td>1BC493</td>
-                <td>oi55</td>
-                <td>3 days ago</td>
-              </tr>
-              <tr>
-                <td>Transfert</td>
-                <td>0.05 RLC</td>
-                <td>1BC493</td>
-                <td>oi55</td>
-                <td>3 days ago</td>
-              </tr>
-            </tbody>
           </Table>
+          <div id="tableBody">
+            <Table>
+              <tbody>
+                <tr>
+                  <td id="column1">Transfert</td>
+                  <td id="column2">0.05 RLC</td>
+                  <td id="column3">1BC493</td>
+                  <td id="column4">oi55</td>
+                  <td>3 days ago</td>
+                </tr>
+                <tr>
+                  <td id="column1">Transfert</td>
+                  <td id="column2">0.05 RLC</td>
+                  <td id="column3">1BC493</td>
+                  <td id="column4">oi55</td>
+                  <td>3 days ago</td>
+                </tr>
+                <tr>
+                  <td id="column1">Transfert</td>
+                  <td id="column2">0.05 RLC</td>
+                  <td id="column3">1BC493</td>
+                  <td id="column4">oi55</td>
+                  <td>3 days ago</td>
+                </tr>
+                <tr>
+                  <td id="column1">Transfert</td>
+                  <td id="column2">0.05 RLC</td>
+                  <td id="column3">1BC493</td>
+                  <td id="column4">oi55</td>
+                  <td>3 days ago</td>
+                </tr>
+                <tr>
+                  <td id="column1">Transfert</td>
+                  <td id="column2">0.05 RLC</td>
+                  <td id="column3">1BC493</td>
+                  <td id="column4">oi55</td>
+                  <td>3 days ago</td>
+                </tr>
+                <tr>
+                  <td id="column1">Transfert</td>
+                  <td id="column2">0.05 RLC</td>
+                  <td id="column3">1BC493</td>
+                  <td id="column4">oi55</td>
+                  <td>3 days ago</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

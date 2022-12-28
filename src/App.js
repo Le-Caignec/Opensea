@@ -3,17 +3,36 @@ import { Routes, Route } from 'react-router-dom'
 import NavbarTool from './componants/Navbar/NavbarTool.js'
 import Footer from './componants/Footer/Footer.js'
 import HomePage from './pages/HomePage.js'
+import AllNftPage from './pages/AllNftPage.js'
+import CollectionsPage from './pages/CollectionPage.js'
+import AccountPage from './pages/AccountPage.js'
 import NftPage from './pages/NftPage.js'
-
+import AllForOneCollection from './pages/AllForOneCollection.js'
 
 function App() {
   return (
     <div className="app">
       <NavbarTool />
-      <div id='content'>
+      <div id="content">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/nftPage" element={<NftPage tokenID={1567} owner={"0xcCD8c9b1963407A538825EdcfccFbb308f209E47"}/>} />
+          <Route path="/CollectionsPage" element={<CollectionsPage />} />
+          <Route
+            path="/CollectionsPage/AllForOneCollection"
+            element={<AllForOneCollection />}
+          />
+          <Route path="AllNftPage" element={<AllNftPage />} />
+          <Route path="/AccountPage" element={<AccountPage />} />
+          <Route
+            path="/nftPage"
+            element={
+              <NftPage
+                tokenID={1567}
+                owner={'0xcCD8c9b1963407A538825EdcfccFbb308f209E47'}
+              />
+            }
+          />
+          <Route path="*" element={<HomePage />} />
         </Routes>
       </div>
       <Footer />

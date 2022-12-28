@@ -8,7 +8,22 @@ export default function MoreAboutCollection() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Lore From This Collection</Accordion.Header>
         <Accordion.Body>
-          <Row>
+          <Row id="horizontalScrolling">
+            <Col>
+              <NftCard style={{ height: '500px' }} tokenID={1234} />
+            </Col>
+            <Col>
+              <NftCard tokenID={1234} />
+            </Col>
+            <Col>
+              <NftCard tokenID={1234} />
+            </Col>
+            <Col>
+              <NftCard tokenID={1234} />
+            </Col>
+            <Col>
+              <NftCard tokenID={1234} />
+            </Col>
             <Col>
               <NftCard tokenID={1234} />
             </Col>

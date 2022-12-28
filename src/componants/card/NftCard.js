@@ -8,8 +8,8 @@ export default function NftCard({ tokenID }) {
       <Card id="nftCard">
         <Card.Img variant="top" src={nft} />
         <Card.Body>
-          <Row>
-            <Col id='firstCol'>
+          <Row fluid>
+            <Col md={7}id='firstCol'>
               <h3>Wired Beast #{tokenID}</h3>
             </Col>
             <Col md={4}>

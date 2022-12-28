@@ -1,0 +1,30 @@
+#navbar img {
+  margin: auto;
+  margin-right: 3%;
+  margin-left: 1%;
+  width: 80px;
+  height: auto;
+}
+
+#navbar svg {
+  margin-right: 3%;
+}
+
+#explorerModal {
+  margin: auto;
+  position: relative;
+  --margin: 5%;
+  margin-left: var(--margin);
+}
+
+#navbar h6 {
+  margin: auto;
+  cursor: pointer;
+}
+
+#navbar .list-group {
+  position: absolute;
+  width: 180px;
+  top: 40px;
+  left: 0px;
+}
