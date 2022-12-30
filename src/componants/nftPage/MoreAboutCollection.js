@@ -10,7 +10,7 @@ export default function MoreAboutCollection() {
         <Accordion.Body>
           <Row id="horizontalScrolling">
             <Col>
-              <NftCard style={{ height: '500px' }} tokenID={1234} />
+              <NftCard tokenID={1234} />
             </Col>
             <Col>
               <NftCard tokenID={1234} />

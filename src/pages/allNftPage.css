@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+#AllNftPage .form-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu .button-group {
+  display: inline-block;
+}
+
+#sideMenu .accordion-item {
+  color: white;
+  background-color: #202225;
+}
+
+#nftCol {
+  margin-bottom: 30px;
+}

@@ -2,12 +2,11 @@
   position: relative;
   border: none;
   color: black;
-  width: 300px;
   border-radius: 10px;
   box-shadow: grey 0px 2px 8px 0px;
   margin: auto;
-  height: 300px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
 }
 
 #nftCard .card-img-top {

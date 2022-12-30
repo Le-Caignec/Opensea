@@ -1,0 +1,7 @@
+#AllForOneCollection .nav-link {
+  color: white;
+}
+
+#AllForOneCollection .nav-link.active {
+  color: #202225;
+}

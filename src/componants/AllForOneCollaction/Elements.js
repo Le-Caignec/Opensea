@@ -1,14 +1,14 @@
-import './allNftPage.css'
+import './elements.css'
 import { Row, Col, Button, ButtonGroup, Accordion, Form } from 'react-bootstrap'
 import { BsTextCenter } from 'react-icons/bs'
 import { useState } from 'react'
-import NftCard from '../componants/card/NftCard.js'
+import NftCard from '../card/NftCard.js'
 
-export default function AllNftPage() {
+export default function Elements() {
   const [displayMenu, setDisplayMenu] = useState(true)
   const [item, setItem] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
   return (
-    <div id="AllNftPage">
+    <div id="Elements">
       <div className="menu">
         <Button onClick={() => setDisplayMenu(!displayMenu)}>
           <BsTextCenter size={20} />
@@ -62,7 +62,7 @@ export default function AllNftPage() {
           <Row md={4}>
             {item.map((item) => (
               <Col key={item} id="nftCol">
-                <NftCard tokenID={item} />
+                <NftCard tokenID={item}/>
               </Col>
             ))}
           </Row>

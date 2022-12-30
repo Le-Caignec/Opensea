@@ -11,10 +11,17 @@
   overflow-y: hidden;
 }
 
+#horizontalScrolling::-webkit-scrollbar {
+  display: none;
+}
+
+#horizontalScrolling .col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #moreAboutCollection .row .col {
   width: 280px;
   padding: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
   height: 100px;
 }
