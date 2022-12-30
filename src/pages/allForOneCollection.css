@@ -5,3 +5,21 @@
 #AllForOneCollection .nav-link.active {
   color: #202225;
 }
+
+#items {
+  padding-left: 12px;
+  margin: 20px;
+  max-width: 38%;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+#description {
+  margin: auto;
+  margin: 20px;
+  max-width: 45%;
+}
+
+#description p {
+  text-align: justify;
+}

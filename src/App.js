@@ -1,4 +1,5 @@
 import './app.css'
+import './componants/commun.css'
 import { Routes, Route } from 'react-router-dom'
 import NavbarTool from './componants/Navbar/NavbarTool.js'
 import Footer from './componants/Footer/Footer.js'

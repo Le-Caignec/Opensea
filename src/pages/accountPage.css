@@ -1,0 +1,7 @@
+#AccountPage .nav-link {
+  color: white;
+}
+
+#AccountPage .nav-link.active {
+  color: #202225;
+}

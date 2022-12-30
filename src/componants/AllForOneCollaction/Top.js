@@ -1,7 +1,7 @@
 import './top.css'
 import front from '../../assets/front.avif'
 import background from '../../assets/background.avif'
-import { Container, Row, Col, Divider } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import etherscan from '../../assets/logo/etherscan-logo.webp'
 
 export default function Top() {
@@ -50,20 +50,12 @@ export default function Top() {
             </a>
           </Col>
         </Row>
-        <Row id="description">
-          <Col>
+        <div id="items">
             <h6>Éléments 3 000</h6>
-          </Col>
-          <Col>
-            <h6>Créé le Mar 2022</h6>
-          </Col>
-          <Col>
-            <h6>Frais de création 5%</h6>
-          </Col>
-          <Col>
-            <h6>Blockchain Bellecour</h6>
-          </Col>
-        </Row>
+            <h6>·   Créé le Mar 2022</h6>
+            <h6>·   Frais de création 5%</h6>
+            <h6>·   Blockchain Bellecour</h6>
+        </div>
         <Row id="description">
           <Col>
             <p>

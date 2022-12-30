@@ -1,5 +1,13 @@
 import './allNftPage.css'
-import { Row, Col, Button, ButtonGroup, Accordion, Form } from 'react-bootstrap'
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  ButtonGroup,
+  Accordion,
+  Form,
+} from 'react-bootstrap'
 import { BsTextCenter } from 'react-icons/bs'
 import { useState } from 'react'
 import NftCard from '../componants/card/NftCard.js'
@@ -19,55 +27,57 @@ export default function AllNftPage() {
           <Button variant="secondary">Right</Button>
         </ButtonGroup>
       </div>
-      <Row>
-        {displayMenu && (
-          <Col md={3}>
-            <Accordion id="sideMenu" defaultActiveKey="0">
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
-                <Accordion.Body>
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
-                <Accordion.Body>
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="2">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
-                <Accordion.Body>
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="3">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
-                <Accordion.Body>
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                  <Form.Check type="checkbox" label="test" />
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
+      <Container fluid id="sideMenu">
+        <Row>
+          {displayMenu && (
+            <Col md={3}>
+              <Accordion alwaysOpen defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Statut</Accordion.Header>
+                  <Accordion.Body>
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Prix</Accordion.Header>
+                  <Accordion.Body>
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>Quantité</Accordion.Header>
+                  <Accordion.Body>
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>Catégorie</Accordion.Header>
+                  <Accordion.Body>
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                    <Form.Check type="checkbox" label="test" />
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          )}
+          <Col>
+            <Row md={4}>
+              {item.map((item) => (
+                <Col key={item} id="nftCol">
+                  <NftCard tokenID={item} />
+                </Col>
+              ))}
+            </Row>
           </Col>
-        )}
-        <Col>
-          <Row md={4}>
-            {item.map((item) => (
-              <Col key={item} id="nftCol">
-                <NftCard tokenID={item} />
-              </Col>
-            ))}
-          </Row>
-        </Col>
-      </Row>
+        </Row>
+      </Container>
     </div>
   )
 }

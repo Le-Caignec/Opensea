@@ -6,10 +6,6 @@
   height: auto;
 }
 
-#navbar svg {
-  margin-right: 3%;
-}
-
 #explorerModal {
   margin: auto;
   position: relative;
@@ -27,4 +23,19 @@
   width: 180px;
   top: 40px;
   left: 0px;
+  z-index: 1;
+}
+
+#accountModal {
+  margin: auto;
+  position: relative;
+  margin-right: 3%;
+}
+
+#accountModal .list-group {
+  position: absolute;
+  width: 180px;
+  top: 40px;
+  left: -150px;
+  z-index: 1;
 }

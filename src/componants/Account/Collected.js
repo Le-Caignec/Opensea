@@ -1,4 +1,4 @@
-import './elements.css'
+import './collected.css'
 import {
   Container,
   Row,
@@ -12,7 +12,7 @@ import { BsTextCenter } from 'react-icons/bs'
 import { useState } from 'react'
 import NftCard from '../card/NftCard.js'
 
-export default function Elements() {
+export default function Collected() {
   const [displayMenu, setDisplayMenu] = useState(true)
   const [item, setItem] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
   return (
