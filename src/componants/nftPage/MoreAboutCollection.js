@@ -6,7 +6,7 @@ export default function MoreAboutCollection() {
   return (
     <Accordion id="moreAboutCollection" defaultActiveKey="0">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Lore From This Collection</Accordion.Header>
+        <Accordion.Header>More From This Collection</Accordion.Header>
         <Accordion.Body>
           <Row id="horizontalScrolling">
             <Col>

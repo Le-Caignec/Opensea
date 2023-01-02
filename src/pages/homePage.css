@@ -1,6 +1,19 @@
-#HomePage .row h1{
-    margin: auto;
-    margin-top: 5%;
-    text-align: center;
+#HomePage {
+  padding: 30px;
 }
 
+#HomePage .row h1 {
+  text-align: center;
+}
+
+#HomePage h5 {
+  margin-top: 40px;
+}
+
+#HomePage .nav-link {
+  color: white;
+}
+
+#HomePage .nav-link.active {
+  color: #202225;
+}

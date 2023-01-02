@@ -1,0 +1,23 @@
+#ranking {
+  height: 450px;
+  overflow: hidden;
+}
+
+#oneRow {
+  margin: 10px;
+  height: 6%;
+}
+
+#oneRow .col {
+  height: 100%;
+}
+
+#oneRow img {
+  width: auto;
+  height: 100%;
+}
+
+#oneRow .col {
+  text-align: center;
+  vertical-align: middle;
+}

@@ -1,0 +1,56 @@
+
+#horizontalScrollingHome {
+    position: relative;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  #horizontalScrollingHome::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #horizontalScrollingHome .col {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 280px;
+    padding: 10px;
+    height: 100px;
+  }
+  #carousel {
+    position: relative;
+  }
+  
+  #leftArrow {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: #303339;
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50px;
+    padding: 7px;
+    text-align: center;
+    top: 38%;
+    left: -1%;
+    cursor: pointer;
+  }
+  
+  #rightArrow {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: #303339;
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50px;
+    padding: 7px;
+    text-align: center;
+    top: 38%;
+    right: -1%;
+    cursor: pointer;
+  }
+  

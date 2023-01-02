@@ -68,7 +68,7 @@ export default function AllNftPage() {
             </Col>
           )}
           <Col>
-            <Row md={4}>
+            <Row>
               {item.map((item) => (
                 <Col key={item} id="nftCol">
                   <NftCard tokenID={item} />
