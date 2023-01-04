@@ -11,20 +11,33 @@ import {
 import { BsTextCenter } from 'react-icons/bs'
 import { useState } from 'react'
 import NftCard from '../componants/card/NftCard.js'
+import {
+  BsFillGrid3X3GapFill,
+  BsFillGrid1X2Fill,
+  BsFillGridFill,
+} from 'react-icons/bs'
 
 export default function AllNftPage() {
-  const [displayMenu, setDisplayMenu] = useState(true)
   const [item, setItem] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+  const [displayMenu, setDisplayMenu] = useState(true)
+  const [agencement, setAgencement] = useState(4)
+
   return (
     <div id="AllNftPage">
       <div className="menu">
         <Button onClick={() => setDisplayMenu(!displayMenu)}>
           <BsTextCenter size={20} />
         </Button>
-        <ButtonGroup id="trr">
-          <Button variant="secondary">Left</Button>
-          <Button variant="secondary">Middle</Button>
-          <Button variant="secondary">Right</Button>
+        <ButtonGroup id="dispositionButton">
+          <Button onClick={() => setAgencement(5)}>
+            <BsFillGrid3X3GapFill size={25} />
+          </Button>
+          <Button onClick={() => setAgencement(4)} id="second">
+            <BsFillGridFill size={25} />
+          </Button>
+          <Button onClick={() => setAgencement(3)} id="third">
+            <BsFillGrid1X2Fill size={25} />
+          </Button>
         </ButtonGroup>
       </div>
       <Container fluid id="sideMenu">
@@ -68,7 +81,7 @@ export default function AllNftPage() {
             </Col>
           )}
           <Col>
-            <Row>
+            <Row md={agencement}>
               {item.map((item) => (
                 <Col key={item} id="nftCol">
                   <NftCard tokenID={item} />

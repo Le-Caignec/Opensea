@@ -9,10 +9,14 @@ import CollectionsPage from './pages/CollectionPage.js'
 import AccountPage from './pages/AccountPage.js'
 import NftPage from './pages/NftPage.js'
 import AllForOneCollection from './pages/AllForOneCollection.js'
+import { useContext } from 'react'
+import { ThemeContext } from './Context/ThemeContext.js'
 
 function App() {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className="app">
+    <div className="app" id={theme}>
       <NavbarTool />
       <div id="content">
         <Routes>

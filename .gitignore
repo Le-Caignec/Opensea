@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#subgraph
+/bellecour_graph/build
+/bellecour_graph/node_modules

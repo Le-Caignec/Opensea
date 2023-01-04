@@ -34,6 +34,9 @@ function OneRow() {
       <Col>
         <img src={front} alt="loading" />
       </Col>
+      <Col md={2}>
+        <h6>Wired Beast</h6>
+      </Col>
       <Col md={1}>
         <h6>#2685</h6>
       </Col>
@@ -45,13 +48,10 @@ function Header() {
   return (
     <Row id="header">
       <Col>
-        <h6>Rank</h6>
+        <h6>Collection</h6>
       </Col>
       <Col>
-        <h6>Avatar</h6>
-      </Col>
-      <Col>
-        <h6>Score</h6>
+        <h6>TokenID</h6>
       </Col>
     </Row>
   )

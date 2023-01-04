@@ -47,12 +47,20 @@
   margin: 30px;
 }
 
-.menu button {
+#Dark .menu button {
   background-color: #202225;
-  border: 1px solid #363840;
+  border: 0px;
   border-radius: 10px;
   color: white;
-  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#Light .menu button {
+  background-color: white;
+  border: 0px;
+  border-radius: 10px;
+  color: #202225;
   cursor: pointer;
   text-align: center;
 }
@@ -61,7 +69,15 @@
   display: inline-block;
 }
 
-#sideMenu .accordion {
+#Light #sideMenu .accordion {
+  --bs-accordion-bg: white;
+  --bs-border-color: white;
+  --bs-accordion-active-color: #202225;
+  --bs-accordion-btn-color: #202225;
+  --bs-accordion-active-bg: white;
+}
+
+#Dark #sideMenu .accordion {
   --bs-accordion-bg: #202225;
   --bs-border-color: #202225;
   --bs-accordion-active-color: white;
@@ -72,21 +88,59 @@
 #sideMenu .accordion-header {
   border-bottom: 2px solid #363840;
 }
-#sideMenu .accordion-button::after {
-  color: white;
-}
 
-#sideMenu .form-check {
+#Dark #sideMenu .form-check {
   display: flex;
   justify-content: space-between;
   color: white;
 }
 
-#sideMenu .form-check-input {
+#Light #sideMenu .form-check {
+  display: flex;
+  justify-content: space-between;
+  color: #202225;
+}
+
+#Dark #sideMenu .form-check-input {
   background-color: #202225;
   border-color: white;
 }
 
+#Light #sideMenu .form-check-input {
+  background-color: white;
+  border-color: #202225;
+}
+
 #nftCol {
   margin-bottom: 30px;
+}
+
+#Dark #dispositionButton {
+  border: 1px solid white;
+}
+
+#Dark #dispositionButton #first {
+  border-right: 1px solid white;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#Dark #dispositionButton #third {
+  border-left: 1px solid white;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#Light #dispositionButton {
+  border: 1px solid #363840;
+}
+
+#Light #dispositionButton #first {
+  border-right: 1px solid #363840;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#Light #dispositionButton #third {
+  border-left: 1px solid #363840;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }

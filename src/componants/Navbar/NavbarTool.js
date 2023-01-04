@@ -1,15 +1,17 @@
 import './navbarTool.css'
 import { Navbar, ListGroup, Form } from 'react-bootstrap'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import Search from './Search'
 import { BsPersonCircle } from 'react-icons/bs'
 import logo from '../../assets/logo.png'
 import { useNavigate } from 'react-router-dom'
+import { ThemeContext } from '../../Context/ThemeContext.js'
 
 export default function NavbarTool() {
   const naviguate = useNavigate()
   const [showExplore, setShowExplore] = useState(false)
   const [showAccount, setShowAccount] = useState(false)
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <Navbar id="navbar">
@@ -43,9 +45,16 @@ export default function NavbarTool() {
             </ListGroup.Item>
             <ListGroup.Item action>Connect</ListGroup.Item>
             <ListGroup.Item action>Disconnect</ListGroup.Item>
-            <ListGroup.Item action style={{display:'flex',justifyContent:'space-between'}}>
-              Light Mode
-              <Form.Check type="switch" id="custom-switch" style={{display:'inline-block'}}/>
+            <ListGroup.Item
+              action
+              style={{ display: 'flex', justifyContent: 'space-between' }}
+            >
+              {theme} Mode
+              <Form.Check
+                type="switch"
+                style={{ display: 'inline-block' }}
+                onChange={toggleTheme}
+              />
             </ListGroup.Item>
           </ListGroup>
         )}
