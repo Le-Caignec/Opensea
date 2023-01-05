@@ -6,6 +6,7 @@ import { BsPersonCircle } from 'react-icons/bs'
 import logo from '../../assets/logo.png'
 import { useNavigate } from 'react-router-dom'
 import { ThemeContext } from '../../Context/ThemeContext.js'
+import Web3Connection from '../../utils/connection'
 
 export default function NavbarTool() {
   const naviguate = useNavigate()
@@ -43,7 +44,9 @@ export default function NavbarTool() {
             <ListGroup.Item action onClick={() => naviguate('/AccountPage')}>
               Profile
             </ListGroup.Item>
-            <ListGroup.Item action>Connect</ListGroup.Item>
+            <ListGroup.Item action>
+              <Web3Connection />
+            </ListGroup.Item>
             <ListGroup.Item action>Disconnect</ListGroup.Item>
             <ListGroup.Item
               action
