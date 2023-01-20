@@ -1,7 +1,7 @@
-import SignClient from '@walletconnect/sign-client'
+/**import SignClient from '@walletconnect/sign-client'
 import { Web3Modal } from '@web3modal/standalone'
 import { useEffect, useState } from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, ListGroup } from 'react-bootstrap'
 
 // 1. Get projectID at https://cloud.walletconnect.com
 console.log(process.env.REACT_APP_WALLET_CONNCET_ID)
@@ -50,11 +50,8 @@ export default function Web3Connection() {
 
   useEffect(() => {
     onInitializeSignClient()
+    if (signClient) {
+      onOpenModal()
+    }
   }, [])
-
-  return signClient ? (
-    <Button onClick={onOpenModal}>Connect Wallet</Button>
-  ) : (
-    'Initializing...'
-  )
-}
+}*/

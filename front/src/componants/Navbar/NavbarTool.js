@@ -44,8 +44,8 @@ export default function NavbarTool() {
             <ListGroup.Item action onClick={() => naviguate('/AccountPage')}>
               Profile
             </ListGroup.Item>
-            <ListGroup.Item action>
-              <Web3Connection />
+            <ListGroup.Item action onClick={Web3Connection}>
+              Connection
             </ListGroup.Item>
             <ListGroup.Item action>Disconnect</ListGroup.Item>
             <ListGroup.Item
